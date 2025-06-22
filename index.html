@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" id="background">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- importing stylesheets. -->
+    <link rel="stylesheet/less" type="text/css" href="assets/style.css" />
+    <!-- importing less and fontawsome icons. -->
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script> 
+    <script src="https://kit.fontawesome.com/55460c171b.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" href="/assets/images/icon.png">
+    <title>MangooO !</title>
+</head>
+<body>
+    <div class="theme">
+        <ul>
+            <li><button id="start"><i class="fa-solid fa-play fa-xl"></i></button></li>
+            <li><button id="stop"><i class="fa-solid fa-stop fa-xl"></i></button></li>
+            <li>
+                <button id="reset">
+                        <i class="fa-solid fa-rotate fa-xl"></i>
+                </button>
+            </li>
+            <li><button id="settings-button"><i class="fa-solid fa-gear fa-xl"></i></button></li>
+        </ul>
+    </div>
+    <span class="settings">
+        <ul>
+            <li>
+                <label for="colors">Colors: </label>
+                <select name="colors" id="colors">
+                    <option value="def">Default</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </li>
+            <li>
+                <label for="background">Use Image: </label>
+                <input type="checkbox" name="background" id="backgroundimages">
+            </li>
+        </ul>
+        <section id="other-settings">
+            <ul>
+                <li>
+                    <label for="images">Images: </label>
+                    <select name="images" id="images">
+                        <option value="newyork">New york</option>
+                        <option value="tokyo">Tokyo</option>
+                    </select>
+                </li>
+            </ul>
+        </section>
+    </span>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="showcase" class="pomodoro">00:00</div>
+    <div class="console" id="consolemessage">Hello...</div>
+    <script type="module" src="assets/js/settings.js"></script>
+    <script type="module" src="assets/js/theme.js"></script>
+    <script src="assets/js/counter.js"></script>
+</body>
+</html>
